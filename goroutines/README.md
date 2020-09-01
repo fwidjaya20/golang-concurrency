@@ -32,7 +32,7 @@ Process Foo - 5
 Process Bar       <- Blocking Occur
 ```
 
-### Proses No Blocking `Asynchronous`
+### Proses Non Blocking `Asynchronous`
 ```go
 func main() {
     for i := 1; i <= 5; i++ {
