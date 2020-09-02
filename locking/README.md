@@ -166,3 +166,8 @@ hasil diatas tidak terjadi `Race Condition`.
 - Proses **T1**, membaca Saldo Awal `Rp.10.000`. Proses ini menambahkan saldo sebesar `Rp.10.000`, sehingga Saldo Akhir menjadi `Rp.20.000`.
 - Proses **T3**, membaca Saldo Awal `Rp.20.000`. Proses ini menambahkan saldo sebesar `Rp.5.000`, sehingga Saldo Akhir menjadi `Rp.25.000`.
 - Proses **T2**, membaca Saldo Awal `Rp.25.000`. Proses ini mengurangi saldo sebesar `Rp.10.000`, sehingga Saldo Akhir menjadi `Rp.15.000`.
+
+# Bagaimana Proses Locking dalam konsep REST, gRPC, dll ?
+Kita dapat melakukan locking dari sisi `Database` (Row Locking).
+- [Explicit Locking Postgres](https://www.postgresql.org/docs/9.4/explicit-locking.html)
+- [Advisory Locking](http://shiroyasha.io/advisory-locks-and-how-to-use-them.html)
