@@ -18,6 +18,7 @@ Saldo Wallet : Rp. 5000,00
 | -  | +100000  | 5000  | 3s  |
 | Write  | -  | 2000  | 4s  |
 | -  | Write  | 15000  | 1s  |
+
 Hasil akhir dari Saldo Wallet adalah: Rp. 2000,00 (Expected Value: Rp. 12.000,00) karena proses  Thread 1 paling lama.
 Pada kasus ini terjadi `Race Condition` dimana kedua Thread mengakses Shared Memory yang sama.
 
